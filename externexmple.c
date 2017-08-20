@@ -1,7 +1,7 @@
 #include<stdio.h>
-int a=7;
+int a=7; //global variable
 void fun()
 {
-	a++;
+	a++; 
 	printf("%d\n",a );
 }
