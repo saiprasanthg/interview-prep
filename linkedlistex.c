@@ -4,7 +4,7 @@ struct node{ // here struct is used for different data types in linked list//
 	int data;
 	struct node *next;
 };
-void insertNode(int x);// function declaration 
+void insertNode(int v);// function declaration 
 void print();
 struct node* head;
 void insertNode(int v)
@@ -29,7 +29,7 @@ void print()  // to print the nodes //
 int main()
 {
 	printf("no of numbers");
-	int n,i,v;
+	int n,i,v; //n is the number of nodes,v is 
 	scanf("%d",&n);
 	for(i=0;i<n;i++)
 	{
