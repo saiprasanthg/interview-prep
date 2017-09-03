@@ -4,18 +4,18 @@ struct node{ // here struct is used for different data types in linked list//
 	int data;
 	struct node *next;
 };
-void insertfront(int x);// function declaration
+void insertNode(int x);// function declaration 
 void print();
 struct node* head;
-void insertfront(int v)
+void insertNode(int v)
 {
 struct node* temp=(struct node*)malloc(sizeof(struct node)); // node creation using malloc //
-temp->data=v;
-temp->next=head;
-head=temp;
+temp->data=v;			
+temp->next=head;	// so adress of head would be now the address of temp->next
+head=temp;			 
 }
 
-void print()
+void print()  // to print the nodes //
 {
 	struct node* temp=head;
 		printf("list");
@@ -35,7 +35,7 @@ int main()
 	{
 	printf("enter the numbers:");
 	scanf("%d",&v);
-	insertfront(v);
+	insertNode(v);
 	print();
 	}
 	
