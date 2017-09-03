@@ -1,15 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
-struct node{
+struct node{ // here struct is used for different data types in linked list//
 	int data;
 	struct node *next;
 };
-void insertfront(int x);
+void insertfront(int x);// function declaration
 void print();
 struct node* head;
 void insertfront(int v)
 {
-struct node* temp=(struct node*)malloc(sizeof(struct node));
+struct node* temp=(struct node*)malloc(sizeof(struct node)); // node creation using malloc //
 temp->data=v;
 temp->next=head;
 head=temp;
@@ -19,7 +19,7 @@ void print()
 {
 	struct node* temp=head;
 		printf("list");
-	while(temp!=NULL)
+	while(temp!=NULL) // for traversal in the linked list //
 	{
 		printf("%d",temp->data);
 		temp=temp->next;
